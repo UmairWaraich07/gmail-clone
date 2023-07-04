@@ -1,0 +1,38 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+.login__container {
+  display: grid;
+}
+.login__logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.login__container > img {
+  object-fit: contain;
+  width: 270px;
+}
+
+.login__container > button {
+  border: none;
+  padding: 8px 16px;
+  background-color: #0277bd;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.login__container > button:hover {
+  background-color: #0a66c2;
+}
+
+@media (max-width: 700px) {
+  .login__container > img {
+    width: 230px;
+  }
+}

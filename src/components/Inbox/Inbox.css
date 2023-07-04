@@ -1,0 +1,92 @@
+.inbox {
+  flex: 0.75;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-left: 5px;
+  height: 85vh;
+  overflow-y: scroll;
+  padding-bottom: 10%;
+}
+@media (max-width: 900px) {
+  .inbox {
+    flex: 0.8;
+  }
+}
+.inbox__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5f6368;
+  background-color: #fff;
+  padding: 8px;
+  padding-bottom: 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.inbox__header-right {
+  margin-right: 10px;
+}
+.inbox__header-icon {
+  padding: 10px;
+  font-size: 40px !important;
+  border-radius: 100%;
+  cursor: pointer;
+  color: #5f6368;
+}
+.inbox__header-icon:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+/* inbox headings */
+.inbox__headings {
+  display: flex;
+  align-items: center;
+}
+.inbox__heading {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.inbox__heading > .MuiSvgIcon-root {
+  font-size: 20px !important;
+}
+.inbox__heading > h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.inbox__heading:hover {
+  background-color: rgb(235, 235, 235);
+}
+.inbox__heading-active {
+  border-bottom: 3px solid #0a66c2;
+  color: #0a66c2;
+}
+.inbox__messages {
+  flex: 1;
+  text-decoration: none;
+}
+.inbox__boxshadow {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+}
+/* styles for scroll bar */
+
+.inbox::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  background-color: #fff;
+}
+
+.inbox::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  background-color: #fff;
+}
+
+.inbox::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+}

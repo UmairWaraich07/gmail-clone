@@ -1,0 +1,100 @@
+.mail {
+  flex: 0.75;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-left: 5px;
+  height: 85vh;
+}
+@media (max-width: 900px) {
+  .mail {
+    flex: 0.8;
+  }
+}
+.mail__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5f6368;
+  padding: 8px;
+  padding-bottom: 0;
+}
+.mail__header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mail__body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  padding-bottom: 0;
+}
+.mail__body-header > h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 60px;
+}
+
+.mail__body-user {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 20px;
+}
+.mail__body-user-data {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mail__user-left > h4 {
+  font-weight: 500;
+}
+.mail__left-div {
+  display: flex;
+  align-items: start;
+}
+.mail__left-div > p {
+  font-size: 12px;
+  color: #5f6368;
+}
+.mail__left-div > .MuiSvgIcon-root {
+  padding: 5px;
+  font-size: 30px !important;
+  border-radius: 100%;
+  cursor: pointer;
+  color: #5f6368;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+.mail__user-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mail__user-right > p {
+  font-size: 12px;
+  color: #5f6368;
+}
+
+.mail__body-message {
+  font-size: 14px;
+  padding: 8px;
+  margin-left: 60px;
+}
+
+@media (max-width: 700px) {
+  .mail__header-right {
+    display: none;
+  }
+  .mail__header-left {
+    gap: 0;
+  }
+  .mail__body-header-icon {
+    display: none;
+  }
+  .mail__user-right-icon {
+    display: none;
+  }
+}

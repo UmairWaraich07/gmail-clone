@@ -1,0 +1,62 @@
+.composeBox {
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  width: 35%;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.composeBox__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #e9f1f9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.composeBox__header > h4 {
+  font-weight: 400;
+}
+.composeBox__header > div {
+  cursor: pointer;
+}
+.composeBox__form {
+  padding-inline: 10px;
+}
+.composeBox__to {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  gap: 10px;
+  padding-block: 5px;
+}
+.composeBox__subject {
+  border-bottom: 1px solid lightgray;
+  padding-block: 5px;
+}
+.composeBox__to > input,
+.composeBox__subject > input {
+  border: none;
+  outline-width: 0;
+  background-color: transparent;
+}
+textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  padding-top: 10px;
+}
+.composeBox__btn {
+  border: none;
+  padding: 8px 18px;
+  background-color: #0a66c2;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

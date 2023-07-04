@@ -1,0 +1,36 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 10px;
+  margin-right: 15px;
+  color: #5f6368;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  padding-block: 2px;
+}
+.sidebarOption:hover {
+  background-color: rgb(235, 235, 235);
+}
+.sidebarOption > p {
+  font-size: 13px;
+}
+.sidebarOption__div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14.5px;
+}
+
+.sidebarOption__icon {
+  font-size: 19px !important;
+}
+.active {
+  background-color: #bbd8f4;
+  color: #202124;
+  font-weight: 500;
+}
+.active:hover {
+  background-color: #bbd8f4;
+}
